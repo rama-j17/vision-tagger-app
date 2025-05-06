@@ -37,8 +37,8 @@ def get_gradcam(pil_img, model, target_layer="layer4"):
     model.zero_grad()
     output[0, pred_class].backward()
 
-    grads_val = gradients[0][0].detach.cpu().numpy()
-    acts_val = activations[0][0].detach.cpu().numpy()
+    grads_val = gradients[0][0].detach().cpu().numpy()
+    acts_val = activations[0][0].detach().cpu().numpy()
 
     weights = np.mean(grads_val, axis=(1, 2))
     cam = np.zeros(acts_val.shape[1:], dtype=np.float32)
