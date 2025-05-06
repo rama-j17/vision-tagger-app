@@ -48,7 +48,7 @@ pip install torch torchvision streamlit opencv-python numpy pillow
 streamlit run app/app.py
 
 🖼️ Sample Output
-✅ Predicted Tag: Coat (70%)
+✅ Predicted Tag: Coat
 
 🔍 Grad-CAM Heatmap showing which image regions influenced the decision.
 ![image](https://github.com/user-attachments/assets/b535e84b-8576-48fc-8d64-b0f7822af444)
